@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "personalabs-mobile-app",
+    "slug": "personalabs-mobile-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0080B8"
+    },
+    "runtimeVersion": "exposdk:49.0.0",
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/730325d0-cbb8-4c19-a5ee-59e08ced61f0"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.personalabs.app",
+      "runtimeVersion": "exposdk:46.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "runtimeVersion": "exposdk:46.0.0",
+      "package": "com.personalabs.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "730325d0-cbb8-4c19-a5ee-59e08ced61f0"
+      }
+    },
+    "plugins": ["sentry-expo"],
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "visiot",
+            "project": "personalabs",
+            "authToken": "cde52b64188441548dfc8d25dff246b2d2525ab80f2e4354b730beada6d40d25"
+          }
+        }
+      ]
+    }
+  }
+}

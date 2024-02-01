@@ -1,0 +1,20 @@
+export default {
+    orange: '#F8A46C',
+    black: '#000000',
+    white: '#FFFFFF',
+    dirtyWhite: '#F6F7F8',
+    lightBlue: '#78CCF3',
+    lightGreen: '#8BCA89',
+    yellow: '#FBC111',
+    gray: '#6D6768',
+    red: '#EE6B6C',
+    brown: '#D3A660',
+    placeholderGray: '#2F2C2F90',
+    lesserBlack: '#2F2C2F',
+    blue: '#5899B5',
+    green: '#4C7F49',
+    strongerYellow: '#BA912E',
+    strongerOrange: '#B97B50',
+    strongerRed: '#B15150',
+    strongerBrown: '#937542'
+}

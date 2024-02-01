@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>949836278440-2r8gkfnrsembu2aqdsm377t9h414ocvi.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.949836278440-2r8gkfnrsembu2aqdsm377t9h414ocvi</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD_POrOlWf5quMLOjUUr7Eqq31h8rsgw-Q</string>
+	<key>GCM_SENDER_ID</key>
+	<string>949836278440</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.happysnappylite.app</string>
+	<key>PROJECT_ID</key>
+	<string>happysnapylite</string>
+	<key>STORAGE_BUCKET</key>
+	<string>happysnapylite.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:949836278440:ios:eb04318b0c15ed73bf309d</string>
+</dict>
+</plist>
