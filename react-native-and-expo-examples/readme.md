@@ -52,3 +52,13 @@ Mobile: https://apps.apple.com/ca/app/growthday-personal-development/id154329131
 
 WEB: https://scheduledapp.com/
 Expo Mobile: https://apps.apple.com/us/app/scheduled-send-text-later/id1145815975
+
+## DelikatessKungen Expo Based
+
+WEB: https://www.delikatesskungen.se/
+Mobile: https://play.google.com/store/apps/details?id=com.digiling.delikatesskungen&hl=en&gl=US
+
+## Happy Snappy
+
+WEB: https://happysnappylite.com/
+Mobile: https://apps.apple.com/ph/app/happy-snappy-lite/id1627736586
