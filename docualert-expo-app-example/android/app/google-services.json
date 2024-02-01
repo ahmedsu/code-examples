@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "823681087835",
+    "project_id": "docualert-mobile",
+    "storage_bucket": "docualert-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823681087835:android:53fba4ef718c2535e9027e",
+        "android_client_info": {
+          "package_name": "net.visiot.docualertv1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823681087835-jsk2ga11m80hvumb4imtoor0h3n6e4ka.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_o5kJfpMtHZsJc271DbweKMln5InmfBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823681087835-jsk2ga11m80hvumb4imtoor0h3n6e4ka.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "823681087835-bfbs4jje9ohv49ikvjrstbke46hpr9k7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "net.visiot.docualertv1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

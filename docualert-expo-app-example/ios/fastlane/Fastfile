@@ -1,0 +1,130 @@
+default_platform(:ios)
+
+platform :ios do
+  def updateVersion(options)
+    if options[:version]
+      version = options[:version]
+    else
+      version = prompt(text: "Enter the version type or specific version\n(major, minor, patch or 1.0.0): ")
+    end
+
+    re = /\d+.\d+.\d+/
+    versionNum = version[re, 0]
+
+    if (versionNum)
+      increment_version_number(
+        version_number: versionNum
+      )
+    elsif (version == 'major' || version == 'minor' || version == 'patch')
+      increment_version_number(
+        bump_type: version
+      )
+    else
+      UI.user_error!("[ERROR] Wrong version!!!!!!")
+    end
+  end
+
+  desc "Push a new beta build to TestFlight"
+  lane :beta do |options|
+    cert
+    sigh(force: true)
+    updateVersion(options)
+
+    increment_build_number(xcodeproj: "docualertmobile.xcodeproj")
+    build_app(workspace: "docualertmobile.xcworkspace", scheme: "docualertmobile")
+    upload_to_testflight
+  end
+
+  desc "Push a new release build to the App Store"
+  lane :release do |options|
+    cert
+    sigh(force: true)
+    updateVersion(options)
+
+    increment_build_number(xcodeproj: "docualertmobile.xcodeproj")
+    build_app(workspace: "docualertmobile.xcworkspace", scheme: "docualertmobile")
+    upload_to_app_store(
+      force: true,
+      reject_if_possible: true,
+      skip_metadata: false,
+      skip_screenshots: true,
+      languages: ['en-US'],
+      release_notes: {
+        "default" => "New version with overall stability improvements",
+        "en-US" => "New version with overall stability improvements",
+      },
+      submit_for_review: true,
+      automatic_release: true,
+      submission_information: {
+        add_id_info_uses_idfa: true,
+        add_id_info_serves_ads: true,
+        add_id_info_tracks_install: true,
+        add_id_info_tracks_action: false,
+        add_id_info_limits_tracking: true,
+        export_compliance_encryption_updated: false,
+      }
+    )
+  end
+
+
+  # GITHUB DEPLOYMENT iOS
+  desc 'GitHub actions release'
+  lane :version do |options|
+    updateVersion(options)
+    increment_build_number(xcodeproj: 'docualertmobile.xcodeproj')
+  end
+
+  lane :github do |_options|
+    create_keychain(
+      name: 'ios_app_keychain',
+      password: 'visiot4now',
+      timeout: 1800,
+      default_keychain: true,
+      unlock: true,
+      lock_when_sleeps: false
+    )
+    import_certificate(
+      certificate_path: 'visiotdistributioncerts.p12',
+      certificate_password: 'visiot4now',
+      keychain_name: 'ios_app_keychain',
+      keychain_password: 'visiot4now'
+    )
+    install_provisioning_profile(path: 'visiotdocualert.mobileprovision')
+    update_project_provisioning(
+      xcodeproj: 'docualertmobile.xcodeproj',
+      target_filter: 'github',
+      profile: 'visiotdocualert.mobileprovision',
+      build_configuration: 'Release'
+    )
+    api_key = app_store_connect_api_key(
+      key_id: 'SYC7K4H4VR',
+      issuer_id: '25e7d8f7-bc3a-46cf-808f-50a34130d30d',
+      key_filepath: 'authkey-distribution-visiot.p8'
+    )
+   # xcversion(version: "14.3.1") # Specify XCode version
+    build_app(workspace: 'docualertmobile.xcworkspace', scheme: 'docualertmobile')
+    upload_to_app_store(
+      force: true,
+      reject_if_possible: true,
+      skip_metadata: false,
+      skip_screenshots: true,
+      languages: ['en-US'],
+      release_notes: {
+        'default' => 'New version with overall stability improvements',
+        "en-US" => "New version with overall stability improvements",
+      },
+      submit_for_review: false, # REVIEW SUBMIT
+      precheck_include_in_app_purchases: false,
+      automatic_release: true,
+      submission_information: {
+        add_id_info_uses_idfa: true,
+        add_id_info_serves_ads: true,
+        add_id_info_tracks_install: true,
+        add_id_info_tracks_action: false,
+        add_id_info_limits_tracking: true,
+        export_compliance_encryption_updated: false
+      },
+      api_key: api_key
+    )
+  end
+end

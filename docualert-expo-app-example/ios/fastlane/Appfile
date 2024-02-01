@@ -1,0 +1,8 @@
+app_identifier("net.visiot.docualertv1") # The bundle identifier of your app
+apple_id("ahmedsu@outlook.com") # Your Apple Developer Portal username
+
+itc_team_id("125599482") # App Store Connect Team ID
+team_id("94NC9S748J") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "api-6668716310793123857-54511",
+  "private_key_id": "da6e6e7bbac27d9486066624ac97671467655903",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDaX0LizOFC0l91\nE0baqqo5oHCFpKXwXuQLsmU0QR5yyqFH570FzGlS+GJ/HP/c7eFRRZ8DVX6A79bT\nxsoo5PtV6l3iveTuZ3V14VkDgmtk+hJE4tctqZA9tgXUjd6+QylWt5D8hF4kmvPP\nUyWmEhEYAxH5bOjCUYi59K+Q5GhS5dP7Pabm7L/aM3nyWsB3x2vAO7lVvGRa+Ufk\nUwfZ09sBJLhIIYSbs3xFB/jIXMLFQhrm6F7qb1ORNHT3GhLJuxDLNzq02+2FLOOd\n+ljQOkbUjJn/4Egamzj+T9SWpOldOGTznecmfK32WRmjsfA2I0Nfkxu0x7/l1MPR\n719QXLwPAgMBAAECggEANFmH8FULX3iNV8SyRLOLMVtr/i3VdgVZiBBRQLCnuv8m\noNVGNECnszNGcZCjKfSBAnm9QBBbzk8w4f4S8rDKK/OOZE//tMNqnkLSkwvN8Rwe\nCxOSYCj5IkIjrawBDP2OyHIjONYGt6HJ9xbIvMIyBN6fjXr1ZbgkHegxunt3Iv/y\nVZHwmq81cBpt25S1KwvkOA1scHfA378bFpeqkNuPn7FLkct6KTj+ZmHaQKCMo4mS\ndiEvhKhfZTbNqs4HFsYVy73Mop+j9yHhIXjifxaAxN8flegrJdCrFLA6NzKIJkeX\nQFeFBhAeKSCtfBVnJF3V2mYNDdlTkS2qJoTklrkcyQKBgQD2qcpEDyyI6Tq/7j5R\nmlJ0+TKSRVDtFJoXPHXHLVje47pjLNeO2j7cfZFYXuhbpTuEl/St+AvfOUgeZWs8\nQvxHg8TeVklDGS13Gyiy3+eolTWrhT9YotbAOJH250TngVdMW30iVF4YjZNLIgfs\nPTR23+oL0t51jBut7cCQqrwTKwKBgQDio1NAOTXPBwDwiWOtCCnPbXjCubsbYhKP\ngoWN1cjQnwm4HAFN6a8HdCmogJy17Emv6WD/zC4bI4iimtAQV4FUwuH8rqvY3UdC\n35Dg+TgswFwW43ANNIpFKZrA1lKTOTvQbYWoQ342GY1m7WuWm9PUAayfhLvz7vmj\nY2AlB4dYrQKBgQDkh5Tlj6V0R5nt3t6QHkmNJKBtEpmSvgaxxotceTAgeZ7jadVg\n/eVFxXTXCj9/QUwuYdcJI4pkS578wnwi/fDclUHduNXxu6767ge8CmSINY3fFvoE\ntgH/X6oktkqJrrTiAtWh68auOuUftCzg/CfSh0xBniILiD7Q2zkRD45mtwKBgQDW\nXzKR3wt8pd1HqEz2EHCr2ZqOZewLvLpdsFHvlTX7z1L8KNE7Bz0dyczVq8GPes9A\na3nquxEpbnUBiXog2wRkTmo//mBiIvwSzzFU+6cc/V6d78e/VeEsBmxw1skIpOxk\n/BOe0yiAt66+mvhXX1IAiQzlXkICPBs5Zvg8TmDBiQKBgAgkLesSKD8Q3OithkW+\nLfSAwO5J89XV3fy3gkX4027WJGK8LV3VakpKpeYDBkUi1A9IoEutVz1yjtd3M2AN\nyZsoOyLp/eJ7c7Jgb6eT1qTePzMYB9Yxd2ee52/BUwyIkTjO9/ERyYjTrF7DRXKC\niMexfv2p1+WurO5BInDIryIS\n-----END PRIVATE KEY-----\n",
+  "client_email": "visiot-apps-deployments@api-6668716310793123857-54511.iam.gserviceaccount.com",
+  "client_id": "117180986161148867427",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/visiot-apps-deployments%40api-6668716310793123857-54511.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

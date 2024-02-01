@@ -1,0 +1,27 @@
+name: Publish Android App to App Store and Play Store
+on:
+  push:
+    tags:
+      - 'v*'
+jobs:
+  release-android:
+    name: Build and release Android app
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '20.2.0'
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1.2'
+      - name: Install jetify
+        run: npm install --save-dev jetifier
+      - name: Install Fastlane
+        run: cd android && bundle install && cd ..
+      - name: Install packages
+        run: yarn install
+      - name: Prebuild
+        run: npm run prebuild-android
+      - name: Execute Fastlane command
+        run: cd android && fastlane github

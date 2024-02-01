@@ -1,0 +1,22 @@
+# OSX
+#
+.DS_Store
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+
+# Bundle artifacts
+*.jsbundle
+
+# fastlane
+ios/*.mobileprovision
+ios/*.cer
+ios/*.dSYM.zip
+android/fastlane/README.md
+ios/fastlane/README.md
